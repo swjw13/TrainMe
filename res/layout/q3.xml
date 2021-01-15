@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".Q3">
+
+    <TextView
+        android:id="@+id/q_userbodyInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="자신의 건강정보 ? "
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/ans_userbodyInfo"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/q_eathabit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="식습관 ? "
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/ans_eathabit"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/q_sportAvailable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="운동 역량 ? "
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/ans_sportAvailabe"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/q3_nextbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="다음" />
+
+</LinearLayout>

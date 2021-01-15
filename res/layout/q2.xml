@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".Q2">
+
+    <TextView
+        android:id="@+id/q_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="키 ? "
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/ans_height"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/q_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="몸무게 ? "
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/ans_weight"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/q_weightprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="체지방 ? "
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/ans_weightprofile"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/q2_nextbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="다음" />
+
+</LinearLayout>

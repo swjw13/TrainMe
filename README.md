@@ -21,3 +21,5 @@
 # adapter
     - 리스트의 아이템들에 listener를 달아주는 걸 adapter 안에서 해 줬는데 설명을 안달았음 
     - 궁금하면 500원
+# kt파일들 위치
+  D:\android\TrainMePractice\app\src\main\java\com\jw\trainmepractice

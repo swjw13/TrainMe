@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/frag1_trainer_image"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/bonobono"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/frag1_trainer_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="name(sex)"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/frag1_trainer_position"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="장소"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/frag1_trainer_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="가격"
+            android:textSize="20sp"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/frag1_trainer_oneLineinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="한 줄 소개"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

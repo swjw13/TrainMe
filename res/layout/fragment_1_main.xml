@@ -6,89 +6,110 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <RelativeLayout
+    <LinearLayout
+        android:orientation="vertical"
         android:id="@+id/frag1_container"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_weight="1">
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:cardBackgroundColor="#dddddd"
-            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="#DDCDCD"
+            app:cardCornerRadius="20dp"
             app:cardElevation="5dp"
             app:cardUseCompatPadding="true">
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/frag1_myinfo_summary"
+            <RelativeLayout
+                android:id="@+id/con1"
                 android:layout_width="match_parent"
-                android:layout_height="150dp">
+                android:layout_height="wrap_content">
 
                 <ImageView
-                    android:id="@+id/imageView2"
-                    android:layout_width="109dp"
-                    android:layout_height="108dp"
-                    android:layout_margin="10dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginBottom="20dp"
-                    android:padding="5dp"
+                    android:id="@+id/myImg"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
                     android:src="@drawable/bonobono"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="20dp"/>
 
                 <TextView
-                    android:id="@+id/username_main"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/m1"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:hint="이름"
-                    app:layout_constraintEnd_toStartOf="@+id/Button_to_changeInfo"
-                    app:layout_constraintStart_toEndOf="@+id/imageView2"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/userage_main"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/myImg"
+                    android:gravity="center"
+                    android:text="안녕하세요"
                     android:layout_marginTop="20dp"
-                    android:hint="나이"
-                    app:layout_constraintEnd_toStartOf="@+id/Button_to_changeInfo"
-                    app:layout_constraintStart_toEndOf="@+id/imageView2"
-                    app:layout_constraintTop_toBottomOf="@+id/username_main" />
+                    android:textSize="20sp" />
 
-                <TextView
-                    android:id="@+id/userwhere_main"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:hint="지역"
-                    app:layout_constraintEnd_toStartOf="@+id/Button_to_changeInfo"
-                    app:layout_constraintStart_toEndOf="@+id/imageView2"
-                    app:layout_constraintTop_toBottomOf="@+id/userage_main" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/m1"
+                    android:gravity="center"
+                    android:orientation="vertical" />
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/Button_to_changeInfo"
-                    android:layout_width="41dp"
-                    android:layout_height="46dp"
-                    android:layout_marginEnd="16dp"
-                    android:layout_marginBottom="72dp"
-                    android:clickable="true"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:srcCompat="@android:drawable/ic_menu_add" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
+                    android:id="@+id/frag1_user_toProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@android:drawable/btn_star" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/con2"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/noimagefound"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingTop="20dp" />
+
+            </LinearLayout>
 
         </androidx.cardview.widget.CardView>
 
-    </RelativeLayout>
+    </LinearLayout>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/main1_list"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="3"/>
+        android:layout_weight="2"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/frag1_howMany"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="박노경님의 문의에 대한\n전문가 0명의 \n답변이 도착했습니다"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:layout_margin="20dp"
+            android:padding="20dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/main1_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp" />
+
+    </LinearLayout>
+
+
 
 </LinearLayout>

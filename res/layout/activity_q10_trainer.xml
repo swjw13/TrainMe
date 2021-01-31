@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TrainerActivity.Q10_trainer">
+
+    <com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBar
+        android:id="@+id/seekbar10"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:max="10"
+        android:progress="9"
+        android:progressTint="#FF5722"
+        android:thumbTint="#FF5722" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="SNS"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:layout_margin="20dp"
+                android:paddingHorizontal="70dp" />
+
+            <Button
+                android:id="@+id/skipButton10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="#FF5722"
+                android:backgroundTint="#FF5722"
+                android:text="SKIP" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="트레이너님의 센터 / 스튜디오의 SNS혹은\n 블로그의 링크를 올려주세요"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_marginTop="100dp"
+            android:padding="20dp"/>
+
+        <EditText
+            android:scrollHorizontally="false"
+            android:id="@+id/snsEditText"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="sns 주소를 입력해주세요"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="40dp"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/nextButton10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_media_next"
+            android:layout_marginTop="200dp"
+            android:layout_marginLeft="250dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

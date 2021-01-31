@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TrainerActivity.Q6_Trainer">
+
+    <com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBar
+        android:id="@+id/seekbar6"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="5dp"
+        android:max="10"
+        android:progress="5"
+        android:progressTint="#FF5722"
+        android:thumbTint="#FF5722"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="40dp"
+        android:text="사진 등록"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/seekbar6"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/q6_skipButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="#FF5722"
+        android:text="SKIP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="70dp"
+        android:gravity="center"
+        android:text="트레이너님의 프로필\n사진을 등록해 주세요 \n 너무 심한 노출은 피해주세요!"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/seekbar6"
+        app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+    <ImageView
+        android:id="@+id/container1"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="70dp"
+        app:layout_constraintStart_toEndOf="@+id/seekbar6"
+        app:layout_constraintTop_toBottomOf="@+id/textView29"
+        app:srcCompat="@drawable/noimagefound" />
+
+    <ImageView
+        android:id="@+id/container2"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintStart_toEndOf="@+id/container1"
+        app:layout_constraintTop_toTopOf="@+id/container1"
+        app:srcCompat="@drawable/noimagefound" />
+
+    <ImageView
+        android:id="@+id/container3"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toEndOf="@+id/seekbar6"
+        app:layout_constraintTop_toBottomOf="@+id/container1"
+        app:srcCompat="@drawable/noimagefound" />
+
+    <ImageView
+        android:id="@+id/container4"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toEndOf="@+id/container3"
+        app:layout_constraintTop_toBottomOf="@+id/container2"
+        app:srcCompat="@drawable/noimagefound" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/nextbutton6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/ic_media_next" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

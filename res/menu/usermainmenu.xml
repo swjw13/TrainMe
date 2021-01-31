@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/usertab1"
+        android:enabled="true"
+        android:title="메인" />
+    <item
+        android:id="@+id/usertab2"
+        android:enabled="true"
+        android:title="추천" />
+
+    <item
+        android:id="@+id/usertab3"
+        android:enabled="true"
+        android:title="채팅" />
+
+    <item
+        android:id="@+id/usertab4"
+        android:enabled="true"
+        android:title="메뉴" />
+</menu>

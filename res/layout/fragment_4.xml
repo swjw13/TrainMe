@@ -6,32 +6,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/testbutton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="161dp"
-        android:layout_marginTop="341dp"
-        android:layout_marginEnd="162dp"
-        android:layout_marginBottom="342dp"
-        android:text="지도보기"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:padding="20dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="161dp"
-        android:layout_marginEnd="162dp"
-        android:layout_marginBottom="50dp"
-        android:text="앱 설정"
-        app:layout_constraintBottom_toTopOf="@+id/testbutton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        <Button
+            android:id="@+id/testbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="카카오지도" />
+
+        <Button
+            android:id="@+id/togoogleMap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="구글지도" />
+
+        <Button
+            android:id="@+id/logoutBtn"
+            android:text="로그아웃"/>
+
+
+    </TableLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

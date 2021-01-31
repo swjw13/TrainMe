@@ -7,6 +7,9 @@ import android.widget.Button
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.ktx.Firebase
+import com.jw.trainmepractice.memberClass.Trainer
+import com.jw.trainmepractice.userActivity.MainActivity
+import com.jw.trainmepractice.userActivity.Q1
 
 // 개인정보를 입력할지 말지 정하는 화면
 // 처음에는 입력을 한다 그러면 Q1.kt 이나 Q1_trainer.kt로 가고

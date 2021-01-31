@@ -3,28 +3,23 @@ package com.jw.trainmepractice
 import android.app.Activity
 import android.content.Context
 import android.content.SharedPreferences
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Adapter
-import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.google.firebase.auth.ktx.auth
-import com.google.firebase.database.*
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.ValueEventListener
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
-
-// 유저의 메인 프로필을 정리 한 부분
-// 나머지는 그냥 그렇게 보면 되고
-// 나는 정보들을 그냥 recyclerview로 모든 부분을 업데이트하는 방법을 썼는데
-// 이걸 그냥 Text로 화면에 박아두는게 좋은지 모르겠다
+import com.jw.trainmepractice.customDialog.userinfo_dialog
 
 class UserMainProfile : AppCompatActivity() {
 
@@ -45,7 +40,9 @@ class UserMainProfile : AppCompatActivity() {
         view.adapter = thisadapter
         view.layoutManager = LinearLayoutManager(this)
 
-        val samedb = db_realtime.child("user").child(Firebase.auth.currentUser!!.uid)
+        val token = getSharedPreferences("user", Context.MODE_PRIVATE).getString("login_token","null")
+
+        val samedb = db_realtime.child("user").child(token!!).child("profile")
 
         getval("name")
         getval("age")
@@ -65,7 +62,8 @@ class UserMainProfile : AppCompatActivity() {
         actionbar?.setDisplayHomeAsUpEnabled(true)
     }
     fun getval(question: String){
-        val sb = db_realtime.child("user").child(Firebase.auth.currentUser!!.uid)
+        val token = getSharedPreferences("user", Context.MODE_PRIVATE).getString("login_token","null")
+        val sb = db_realtime.child("user").child(token!!)
         sb.child(question).addValueEventListener(object: ValueEventListener{
             override fun onCancelled(error: DatabaseError) {}
             override fun onDataChange(snapshot: DataSnapshot) {
@@ -120,7 +118,8 @@ private class MainInfoAdapter(
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
         holder.layout.setOnClickListener {
-            userinfo_dialog(context).callFunction(holder.answer, list[position].question, sp)
+            userinfo_dialog(context)
+                .callFunction(holder.answer, list[position].question, sp)
         }
         holder.question.setText(list[position].question)
         holder.answer.setText(list[position].answer)

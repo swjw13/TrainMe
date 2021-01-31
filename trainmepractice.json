@@ -1,0 +1,110 @@
+{
+  "trainer" : {
+    "1HItAX08jINQJIAxezPzoTBQamo1" : {
+      "FCMToken" : "eEiuKYfYR7qz_dXLZYNG_T:APA91bE3n2ziT6UMWIaqZzhuuH_5V1ZqG7JOwI_wloIxQdQhDWSM3iyIfhXh7uAIS0uFGjzWInxmRoaIr6kw4ofB0vaj-e42S2GshgznP3p41FIYpDaUoup8Ir3CeoCEn7s5c3jexZc8",
+      "profile" : {
+        "additionalPrice" : "YES",
+        "age" : "25",
+        "availabeTime" : "월 9시이전\n",
+        "if_available_outside" : "Yes",
+        "login_token" : "1HItAX08jINQJIAxezPzoTBQamo1",
+        "mainPosition" : "37.565784 / 126.938572",
+        "name" : "홍길동",
+        "oneLineInfo" : "안녕하세요 밤갑습니다",
+        "price10" : "200000",
+        "price20" : "400000",
+        "priceSpecific" : "ㅌㅋㅋ",
+        "programAdditional" : "사랑한다연세",
+        "programName" : "사랑한다 연세여",
+        "ptType" : "1대1 PT",
+        "scheduleAdditional" : "사랑함니다",
+        "sex" : "남",
+        "sns" : "maplestory.com",
+        "specificInfo" : "저는 연세대학교에 가고싶습니다",
+        "timePerOne" : "30",
+        "trainerMajor" : "연세찬양"
+      },
+      "toUser" : {
+        "7PbqOiFoqrIcilGSNGETEJ7r-vnz2xRTP22U1wo9dGgAAAF3UkiQ9w" : {
+          "id" : "1HItAX08jINQJIAxezPzoTBQamo1",
+          "message" : "hello! I am trainer A",
+          "name" : "TrainerA",
+          "perWeek" : "nono",
+          "total" : "nono"
+        }
+      }
+    },
+    "oNPRHybJRaSsLwJmxkGrEHAD8La2" : {
+      "FCMToken" : "eEiuKYfYR7qz_dXLZYNG_T:APA91bE3n2ziT6UMWIaqZzhuuH_5V1ZqG7JOwI_wloIxQdQhDWSM3iyIfhXh7uAIS0uFGjzWInxmRoaIr6kw4ofB0vaj-e42S2GshgznP3p41FIYpDaUoup8Ir3CeoCEn7s5c3jexZc8",
+      "profile" : {
+        "additionalPrice" : "YES",
+        "age" : "30",
+        "availabeTime" : "월 9시이전\n목 13시\n",
+        "if_available_outside" : "Yes",
+        "login_token" : "oNPRHybJRaSsLwJmxkGrEHAD8La2",
+        "mainPosition" : "37.4994914 / 127.06105269999998",
+        "name" : "김개똥",
+        "oneLineInfo" : "안녕하세요 제이름은 김개똥 입니다",
+        "price10" : "50000",
+        "price20" : "10000",
+        "priceSpecific" : "조정 가능합니다",
+        "programAdditional" : "없어여",
+        "programName" : "뚱뚱해도 할수있다!",
+        "ptType" : "1대2 PT",
+        "scheduleAdditional" : "",
+        "sex" : "남",
+        "sns" : "m.naver.com",
+        "specificInfo" : "치킨먹읍시다하하하하하",
+        "timePerOne" : "30",
+        "trainerMajor" : "당신도 할수있습니다 도전하세요!"
+      }
+    }
+  },
+  "user" : {
+    "7PbqOiFoqrIcilGSNGETEJ7r-vnz2xRTP22U1wo9dGgAAAF3UkiQ9w" : {
+      "FCMToken" : "ewjugX-ATWSfdAXuOcJRqf:APA91bGjag7uM5dIIGfXJVGGsQt6NoDePUgoZ2CRxdDFHJCX-Xhm0faIWwp9Wo6lv_LcZsNtNojpwYA-Esz-kg3hZkup5QMuHq4l7aM6yDRmBomFaL-mPzie8a_TQjYx-evpcd6P90QS",
+      "fromTrainer" : {
+        "1HItAX08jINQJIAxezPzoTBQamo1" : {
+          "id" : "1HItAX08jINQJIAxezPzoTBQamo1",
+          "message" : "hello! I am trainer A",
+          "name" : "TrainerA",
+          "perWeek" : "nono",
+          "price" : "20000",
+          "total" : "nono"
+        },
+        "oNPRHybJRaSsLwJmxkGrEHAD8La2" : {
+          "id" : "oNPRHybJRaSsLwJmxkGrEHAD8La2",
+          "message" : "안녕 반가워"
+        }
+      },
+      "matchedTrainer" : {
+        "1HItAX08jINQJIAxezPzoTBQamo1" : {
+          "additionalPrice" : "YES",
+          "address" : " ",
+          "age" : "25",
+          "availableTime" : " ",
+          "fcmtoken" : " ",
+          "id" : " ",
+          "if_available_outside" : "Yes",
+          "login_token" : "1HItAX08jINQJIAxezPzoTBQamo1",
+          "mainPosition" : "37.565784 / 126.938572",
+          "name" : "홍길동",
+          "oneLineInfo" : "안녕하세요 밤갑습니다",
+          "price10" : "200000",
+          "price20" : "400000",
+          "priceSpecific" : "ㅌㅋㅋ",
+          "programAdditional" : "사랑한다연세",
+          "programName" : "사랑한다 연세여",
+          "ptType" : "1대1 PT",
+          "scheduleAdditional" : "사랑함니다",
+          "sex" : "남",
+          "sns" : "maplestory.com",
+          "specificInfo" : "저는 연세대학교에 가고싶습니다",
+          "tel" : " ",
+          "timePerOne" : "30",
+          "trainerMajor" : "연세찬양"
+        }
+      }
+    }
+  }
+}

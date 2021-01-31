@@ -1,8 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.jw.trainmepractice">
-    <!-- 인터넷 사용 권한 설정 -->
+
+    <meta-data
+        android:name="com.kakao.sdk.AppKey"
+        android:value="ad1fb6998b6b487d9d01dbc10b5ec468" />
+    <meta-data
+        android:name="com.google.android.maps.v2.API_KEY"
+        android:value="AIzaSyBWjfb-a2gUGn2hWviFho_9TKyUTX1M3wU" />
+
+    <permission
+        android:name="com.jw.trainmepractice.permission.MAPS_RECIEVE"
+        android:protectionLevel="signature" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.jw.trainmepractice.permission.MAPS_RECIEVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
     <application
+        android:name=".GlobalApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -11,32 +38,42 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TrainMePractice"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Login_trainer"></activity>
-        <activity android:name=".Q5_trainer" />
-        <activity android:name=".Q4_trainer" />
-        <activity android:name=".Q3_trainer" />
-        <activity android:name=".Q2_trainer" />
+        <activity android:name=".userMainFragment.frag2_trainerProfile"></activity>
+        <activity android:name=".userMainFragment.CommentRoom" />
+        <activity android:name=".userMainFragment.SeeProposal" />
+        <activity android:name=".userMainFragment.UserPopup" />
+        <activity android:name=".TrainerActivity.Question_End_trainer" />
+        <activity android:name=".TrainerActivity.Q10_trainer" />
+        <activity android:name=".TrainerActivity.Q9_trainer" />
+        <activity android:name=".TrainerActivity.Q8_trainer" />
+        <activity android:name=".TrainerActivity.Q7_trainer" />
+        <activity android:name=".TrainerActivity.Q6_Trainer" />
+        <activity android:name=".TrainerActivity.Start_Makeprofile" />
+        <activity android:name=".TrainerActivity.Register_trainer" />
+        <activity android:name=".TrainerActivity.MainActivity_Trainer" />
+        <activity android:name=".googleMap" />
+        <activity android:name=".TrainerActivity.Login_trainer" />
+        <activity android:name=".TrainerActivity.Q5_trainer" />
+        <activity android:name=".TrainerActivity.Q4_trainer" />
+        <activity android:name=".TrainerActivity.Q3_trainer" />
+        <activity android:name=".TrainerActivity.Q2_trainer" />
         <activity
-            android:name=".Q4"
+            android:name=".userActivity.Q4"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".Q3"
+            android:name=".userActivity.Q3"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".Q2"
+            android:name=".userActivity.Q2"
             android:windowSoftInputMode="adjustResize" />
-
-        <activity android:name=".Map" />
-
         <activity
             android:name=".ChatRoom"
             android:windowSoftInputMode="adjustResize" />
         <activity android:name=".UserMainProfile" />
-        <activity android:name=".Yes_Or_No_Trainner" />
         <activity
-            android:name=".Q1_trainer"
+            android:name=".TrainerActivity.Q1_trainer"
             android:windowSoftInputMode="adjustResize" />
-        <activity android:name=".`1.Ask_Trainer_or_User`">
+        <activity android:name=".Ask_Trainer_or_User">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -44,31 +81,55 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Q1"
+            android:name=".userActivity.Q1"
             android:windowSoftInputMode="adjustResize" />
         <activity android:name=".YES_OR_NO" />
         <activity
-            android:name=".Register"
+            android:name=".userActivity.Login"
             android:windowSoftInputMode="adjustResize" />
-        <activity
-            android:name=".Login"
-            android:windowSoftInputMode="adjustResize" />
+
+        <activity android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- Redirect URI: "kakao{NATIVE_APP_KEY}://oauth“ -->
+                <data
+                    android:host="oauth"
+                    android:scheme="kakaoad1fb6998b6b487d9d01dbc10b5ec468" />
+            </intent-filter>
+        </activity>
+
         <activity
             android:name=".Splash"
-            android:theme="@style/SplashTheme"></activity>
+            android:theme="@style/SplashTheme" />
         <activity
-            android:name=".MainActivity"
+            android:name=".userActivity.MainActivity"
             android:windowSoftInputMode="adjustResize" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBWjfb-a2gUGn2hWviFho_9TKyUTX1M3wU" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
         <meta-data
             android:name="com.kakao.sdk.AppKey"
             android:value="ad1fb6998b6b487d9d01dbc10b5ec468" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="default_channel_id" />
+
+        <service android:name=".MyFcmService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <uses-library android:name="com.google.android.maps" />
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
     </application>
-    <meta-data
-        android:name="com.kakao.sdk.AppKey"
-        android:value="ad1fb6998b6b487d9d01dbc10b5ec468" />
-
-    <uses-permission android:name="android.permission.INTERNET" />
-
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
 </manifest>
